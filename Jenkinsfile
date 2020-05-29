@@ -5,10 +5,9 @@ pipeline {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
+                    python3 types.py
+                    python3 python/files.py
                 '''
-                sh 'python3 types.py'
             }
         }
     }
